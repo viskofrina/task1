@@ -1,0 +1,8 @@
+<div class="container" style="display: flex; flex-direction: column; width: 100%;">
+  <% @magazines.each do |magazine| %>
+    <div class="row" style="display: flex; justify-content: space-between; width: 100%;">
+      <span><%= magazine.title %></span>
+      <span><%= magazine.isbn %></span>
+    </div>
+  <% end %>
+</div>

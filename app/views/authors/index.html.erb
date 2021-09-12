@@ -1,0 +1,9 @@
+<div class="container" style="display: flex; flex-direction: column; width: 100%;">
+  <% @authors.each do |author| %>
+    <div class="row" style="display: flex; justify-content: space-between; width: 100%;">
+      <span><%= author.email %></span>
+      <span><%= author.first_name %></span>
+      <span><%= author.last_name %></span>
+    </div>
+  <% end %>
+</div>

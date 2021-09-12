@@ -1,0 +1,9 @@
+<div class="container" style="display: flex; flex-direction: column; width: 100%;">
+  <% @objects.each do |object| %>
+    <div class="row" style="display: flex; justify-content: space-between; width: 100%;">
+      <span><%= object.title %></span>
+      <span><%= object.isbn %></span>
+      <span><%= object.authors.map(&:full_name).join(',') %></span>
+    </div>
+  <% end %>
+</div>
